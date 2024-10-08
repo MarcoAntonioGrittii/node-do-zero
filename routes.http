@@ -1,0 +1,27 @@
+POST http://localhost:2323/videos  
+Content-type: application/json
+
+{
+    "title":"Video 02",
+    "description":"o video 02 da trem!",
+    "duration": 180
+}
+
+###
+
+GET http://localhost:2323/videos
+
+###
+
+PUT http://localhost:2323/videos/d2460a54-5561-43c1-84a3-51650ac1ca8f
+Content-Type: application/json
+
+{
+    "title":"Agora é video 02",
+    "description":"o video 02 da parada!",
+    "duration": 108
+}
+
+###
+
+DELETE http://localhost:2323/videos/c2c61440-dbac-4f75-8c07-b158d32f1f73
