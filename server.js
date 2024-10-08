@@ -42,7 +42,7 @@ server.put("/videos/:id", async (req,res) =>{
         duration,
     })
 
-    return res.status(204).send()
+    return res.status(204).send() 
 })
 
 
@@ -54,6 +54,7 @@ server.delete("/videos/:id", async (req,res) =>{
     return res.status(204).send()
 })
 
-server.listen({
+server.listen({ 
+    host: '0.0.0.0',
     port: process.env.PORT ?? 3333,
 })
